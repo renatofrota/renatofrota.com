@@ -17,3 +17,5 @@ Uma forma prática de resolver isso **da maneira correta** é utilizar [este scr
 Se, após a substituição, ainda houver algum problema com o cadeado de segurança, então você ainda tem referências a imagens (ou scripts) inseguros [em arquivos estáticos](/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica) ou **externos** (sendo carregados de outros domínios que não o do seu próprio site). Você pode averiguar quais são essas referências usando o Console do seu navegador (F12) ou ferramenas como o [Why no Padlock?](https://www.whynopadlock.com/) (que significa, "Por que não tem cadeado?").
 
 O script depende do [WP-CLI](http://wp-cli.org/). Você pode instalá-lo manualmente, mesmo em hospedagens compartilhadas - não requer privilégios administrativos. Mas se a sua hospedagem não tem ele pré-instalado, é hora de mudar para [uma hospedagem de respeito](https://www.siteground.com/go/compare-shared-plans).
+
+Se tiver qualquer dificuldade no uso do script, é só [abrir uma issue lá no GitHub](https://github.com/renatofrota/search-replace-ssl/issues/new) ou enviar um comentário logo abaixo.
