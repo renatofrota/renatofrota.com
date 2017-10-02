@@ -4,6 +4,7 @@ theme = "hugo-theme-nix"
 languageCode = "pt-br"
 disqusShortname = "renato-frota"
 publishDir = "docs"
+forcehttps = true
 
 [menu]
   [[menu.header]]
