@@ -9,11 +9,11 @@ publishDir = "docs"
   [[menu.header]]
     name = "blog"
     weight = 0
-    url = "/post"
+    url = "/post/"
   [[menu.header]]
     name = "sobre"
     weight = 1
-    url = "/sobre"
+    url = "/sobre/"
 
 [params]
   GithubID = "renatofrota"
