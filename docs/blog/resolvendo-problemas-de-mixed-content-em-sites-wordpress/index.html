@@ -62,7 +62,7 @@
 				
 				
 				<li >
-					<a href="/post/">~/blog</a>
+					<a href="/blog/">~/blog</a>
 				</li>
 				
 
@@ -73,7 +73,7 @@
 </header>
 
         <div class="container wrapper">
-            <h1><a href="//www.renatofrota.com/post/2017-10-02-resolvendo-problemas-demixed-content-cadeado-amarelo/">Resolvendo problemas de mixed content (cadeado amarelo) em sites WordPress</a></h1>
+            <h1><a href="//www.renatofrota.com/blog/resolvendo-problemas-de-mixed-content-em-sites-wordpress/">Resolvendo problemas de mixed content (cadeado amarelo) em sites WordPress</a></h1>
             <span class="post-date">02/10/2017</span>
             <div class="post-content">
                 <p>Se você tem um site em WordPress e instalou o SSL recentemente, pode estar vendo avisos no seu navegador como &ldquo;conteúdo potencialmente inseguro&rdquo; ou &ldquo;conteúdo misto detectado&rdquo;, etc&hellip; (e o cadeado de segurança fica com uma exclamação ou um triângulo amarelo).</p>
@@ -86,7 +86,7 @@
 
 <p>Uma forma prática de resolver isso <strong>da maneira correta</strong> é utilizar <a href="https://github.com/renatofrota/search-replace-ssl">este script</a> que eu desenvolvi: ele substitui, em todas as referências ao domínio do site que existirem no banco de dados, o protocolo HTTP por HTTPS.</p>
 
-<p>Se, após a substituição, ainda houver algum problema com o cadeado de segurança, então você está tem referências a imagens (ou scripts) <strong>externos</strong> (sendo carregados de outros domínios que não o do seu próprio site). Você pode averiguar quais são essas referências usando o Console do seu navegador (F12) ou ferramenas como o <a href="https://www.whynopadlock.com/">Why no Padlock?</a> (que significa, &ldquo;Por que não tem cadeado?&rdquo;).</p>
+<p>Se, após a substituição, ainda houver algum problema com o cadeado de segurança, então você ainda tem referências a imagens (ou scripts) inseguros <a href="/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica">em arquivos estáticos</a> ou <strong>externos</strong> (sendo carregados de outros domínios que não o do seu próprio site). Você pode averiguar quais são essas referências usando o Console do seu navegador (F12) ou ferramenas como o <a href="https://www.whynopadlock.com/">Why no Padlock?</a> (que significa, &ldquo;Por que não tem cadeado?&rdquo;).</p>
 
 <p>O script depende do <a href="http://wp-cli.org/">WP-CLI</a>. Você pode instalá-lo manualmente, mesmo em hospedagens compartilhadas - não requer privilégios administrativos. Mas se a sua hospedagem não tem ele pré-instalado, é hora de mudar para <a href="https://www.siteground.com/go/compare-shared-plans">uma hospedagem de respeito</a>.</p>
 
@@ -123,7 +123,11 @@
 	Powered by 
 	<a target="_blank" href="https://gohugo.io">Hugo</a>
 	and 
-	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.<br />
+	Hosting provided by
+	<a target="_blank" href="https://www.siteground.com/go/compare-shared-plans">SiteGround</a>,
+	<a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and
+	<a target="_blank" href="https://www.cloudflare.com/">CloudFlare</a>.
 </span>
 </p>
 </footer>

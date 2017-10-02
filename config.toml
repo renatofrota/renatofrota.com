@@ -5,11 +5,14 @@ languageCode = "pt-br"
 disqusShortname = "renato-frota"
 publishDir = "docs"
 
+[permalinks]
+  blog = "/blog/:slug/"
+
 [menu]
   [[menu.header]]
     name = "blog"
     weight = 0
-    url = "/post/"
+    url = "/blog/"
   [[menu.header]]
     name = "sobre"
     weight = 1

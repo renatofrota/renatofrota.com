@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//www.renatofrota.com/post/2017-10-02-resolvendo-problemas-demixed-content-cadeado-amarelo/</loc>
+    <loc>//www.renatofrota.com/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica/</loc>
+    <lastmod>2017-10-02T09:04:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/blog/resolvendo-problemas-de-mixed-content-em-sites-wordpress/</loc>
     <lastmod>2017-10-02T01:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.renatofrota.com/post/2017-10-02-certificados-ssl-serverpilot-gratuito/</loc>
+    <loc>//www.renatofrota.com/blog/certificados-ssl-lets-encrypt-no-plano-gratuito-do-serverpilot/</loc>
     <lastmod>2017-10-02T01:00:00+00:00</lastmod>
   </url>
   
@@ -18,19 +23,18 @@
   </url>
   
   <url>
+    <loc>//www.renatofrota.com/blog/</loc>
+    <lastmod>2017-10-02T09:04:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//www.renatofrota.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//www.renatofrota.com/post/</loc>
-    <lastmod>2017-10-02T01:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//www.renatofrota.com/</loc>
-    <lastmod>2017-10-02T01:30:00+00:00</lastmod>
+    <lastmod>2017-10-02T09:04:29+00:00</lastmod>
     <priority>0</priority>
   </url>
   
