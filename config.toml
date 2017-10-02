@@ -4,7 +4,6 @@ theme = "hugo-theme-nix"
 languageCode = "pt-br"
 disqusShortname = "renato-frota"
 publishDir = "docs"
-forcehttps = true
 
 [menu]
   [[menu.header]]
@@ -29,4 +28,5 @@ forcehttps = true
   About = "Oi, eu sou o Renato e este é o meu site. Sou desenvolvedor e adoro viajar! No meu blog você poderá encontrar posts sobre as coisas técnicas que desenvolvi ou que encontrei por aí e achei interessante compartilhar, além de algumas coisas do meu dia a dia e reflexões."
   ProfilePicture = "/profile.jpg"
 #  SlackURL = "your_slack_invite_url"
+forcehttps = true
 
