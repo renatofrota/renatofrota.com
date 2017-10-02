@@ -1,4 +1,4 @@
-baseurl = "https://www.renatofrota.com/"
+baseurl = "//www.renatofrota.com/"
 title = "Renato Frota"
 theme = "hugo-theme-nix"
 languageCode = "pt-br"
