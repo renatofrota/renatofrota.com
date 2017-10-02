@@ -1,0 +1,31 @@
+baseurl = "https://www.renatofrota.com/"
+title = "Renato Frota"
+theme = "hugo-theme-nix"
+languageCode = "pt-br"
+disqusShortname = "renato-frota"
+publishDir = "docs"
+
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "/post"
+  [[menu.header]]
+    name = "sobre"
+    weight = 1
+    url = "/sobre"
+
+[params]
+  GithubID = "renatofrota"
+  TwitterID = "Renato_Frota"
+#  LinkedInID = "your_linkedin"
+  GoogleplusID = "+RenatoFrota"
+  FacebookID = "renatofrota"
+  Name = "Renato Frota"
+  HeaderUsername = "renato"
+  HeaderHostname = "frota"
+  Email = "renatofrota@gmail.com"
+  About = "Oi, eu sou o Renato e este é o meu site. Sou desenvolvedor e adoro viajar! No meu blog você poderá encontrar posts sobre as coisas técnicas que desenvolvi ou que encontrei por aí e achei interessante compartilhar, além de algumas coisas do meu dia a dia e reflexões."
+  ProfilePicture = "/profile.jpg"
+#  SlackURL = "your_slack_invite_url"
+
