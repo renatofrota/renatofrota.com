@@ -20,9 +20,9 @@ publishDir = "docs"
 
 [params]
   GithubID = "renatofrota"
-  TwitterID = "Renato_Frota"
+#  TwitterID = "Renato_Frota"
 #  LinkedInID = "your_linkedin"
-  GoogleplusID = "+RenatoFrota"
+#  GoogleplusID = "+RenatoFrota"
   FacebookID = "renatofrota"
   Name = "Renato Frota"
   HeaderUsername = "renato"
