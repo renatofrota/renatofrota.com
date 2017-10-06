@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> SkipDNS - acessando domínios a partir de um servidor específico &middot; Renato Frota </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.29" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="//www.renatofrota.com/css/nix.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+
+
+	<script type="text/javascript">if ((location.protocol !== "https:") && (window.location.hostname != "127.0.0.1") && (window.location.hostname != "localhost")) location.protocol = "https:";</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=//www.renatofrota.com/>renato@frota ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="//www.renatofrota.com/">/home/renato</a>
+				</li>
+				
+				
+				<li >
+					<a href="/sobre/">~/sobre</a>
+				</li>
+				
+				
+				<li >
+					<a href="/series/">~/series</a>
+				</li>
+				
+				
+				<li >
+					<a href="/blog/">~/blog</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/">SkipDNS - acessando domínios a partir de um servidor específico</a></h1>
+            <span class="post-date">06/10/2017</span>
+            
+                <p style="margin-bottom:20px">Tags:
+                
+                    <a href="/tags/dns">DNS</a> 
+                
+                    <a href="/tags/ferramentas">Ferramentas</a> 
+                
+                </p>
+            
+            <div class="post-content">
+                
+
+<p>Este post faz parte de uma série: <a href="/series/acessando-um-dominio-a-partir-de-um-servidor-especifico">acessando um domínio a partir de um servidor específico</a>. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).</p>
+
+<p>Você já passou por aquela situação em que você está migrando um site entre dois servidores diferentes e queria se certificar de que o site iria funcionar conforme o esperado no servidor de destino antes de apontar o DNS do domínio?</p>
+
+<p>Ou ainda, já precisou desenvolver um site para um cliente, em um servidor diferente daquele onde ele está de fato hospedado (situação muito comum em agências de desenvolvimento web)?</p>
+
+<h2 id="possíveis-soluções">Possíveis soluções</h2>
+
+<h3 id="solução-1-urls-temporárias">Solução 1 - URLs temporárias</h3>
+
+<p>Normalmente recorremos às <del>muitas vezes</del> complicadas <strong>URLs temporárias</strong>. Os problemas em depender dessas URLs são:</p>
+
+<ol>
+<li><p>dificuldade de configurar.</p></li>
+
+<li><p>ter que desfazer tudo na hora de publicar o site.</p></li>
+
+<li><p>ter que <strong>refazer</strong> tudo se for preciso rever/ajustar alguma informação (e desfazer novamente).</p></li>
+
+<li><p>a URL temporária é salva em inúmeros pontos do banco de dados e, em algum momento, você vai acabar tendo que recorrer a um plugin de &ldquo;search and replace&rdquo; para corrigir todas elas.</p></li>
+</ol>
+
+<p>Os 3 primeiros pontos, até dá pra contornar seguindo <a href="/blog/acessando-o-wordpress-com-um-endereco-temporario/">esta dica</a>, mas não dá pra fugir do último.</p>
+
+<h3 id="solução-2-modificar-o-arquivo-hosts-do-seu-computador">Solução 2 - modificar o arquivo Hosts do seu computador</h3>
+
+<p>Outra solução possível é <a href="/blog/modificando-o-arquivo-hosts-do-seu-computador">modificar o arquivo hosts do seu computador</a> para forçá-lo a carregar um domínio ou subdomínio a partir de um IP específico. Os problemas dessa solução incluem:</p>
+
+<ol>
+<li><p>você precisa fazer isso em todos os computadores que precisem acessar esse site a partir de um servidor de desenvolvimento específico (leia-se: nos micros de vários funcionários da agência e <strong>no computador do seu cliente</strong>)</p></li>
+
+<li><p>uma vez feita a alteração, você <strong>não consegue mais</strong> abrir o site a partir do servidor para onde o domínio realmente aponta, a menos que desfaça a alteração (ou seja, é tudo ou nada, 8 ou 80).</p></li>
+</ol>
+
+<h3 id="solução-definitiva-skipdns">Solução definitiva: SkipDNS</h3>
+
+<p>Apresento a solução definitiva para este problema: <strong><a href="https://skipdns.link">SkipDNS</a></strong></p>
+
+<p>É só acessar o <a href="https://skipdns.link">https://skipdns.link</a> e informar no primeiro campo o domínio do site e no segundo campo o IP da conta ou o nameserver indicado pelo provedor (que o domínio <em>&ldquo;deveria&rdquo;</em> utilizar para carregar a partir daquele provedor em questão).</p>
+
+<p>Essa ferramenta te fornece um link especial que &ldquo;salta&rdquo; a resolução de DNS atual do domínio, apontando diretamente para o servidor que você indicou.</p>
+
+<p>A resolução de DNS é &ldquo;forçada&rdquo; para este IP específico nas requisições do domínio &ldquo;base&rdquo; e do subdomínio www. Outros subdomínios do domínio em questão não serão &ldquo;filtrados&rdquo; e carregarão diretamente dos servidores para onde eles apontam via DNS então, em setups muito personalizados, pode não funcionar. Comente abaixo, se for o caso, ou se você tiver qualquer dúvida.</p>
+
+            </div>
+            
+            <div class="post-comments">
+                <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "renato-frota" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2017 Renato Frota -
+<span class="credit">
+	Powered by 
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and 
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.<br />
+	Hosting provided by
+	<a target="_blank" href="https://www.siteground.com/go/compare-shared-plans">SiteGround</a>,
+	<a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and
+	<a target="_blank" href="https://www.cloudflare.com/">CloudFlare</a>.
+</span>
+</p>
+</footer>
+
+    </body>

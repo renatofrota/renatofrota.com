@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Renato Frota</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
+    <lastBuildDate>Fri, 06 Oct 2017 06:16:30 +0000</lastBuildDate>
     
 	<atom:link href="//www.renatofrota.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dns</title>
+      <link>//www.renatofrota.com/tags/dns/</link>
+      <pubDate>Fri, 06 Oct 2017 06:16:30 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ferramentas</title>
+      <link>//www.renatofrota.com/tags/ferramentas/</link>
+      <pubDate>Fri, 06 Oct 2017 06:16:30 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/tags/ferramentas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lets Encrypt</title>
+      <link>//www.renatofrota.com/tags/lets-encrypt/</link>
+      <pubDate>Mon, 02 Oct 2017 01:00:00 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/tags/lets-encrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssl</title>
+      <link>//www.renatofrota.com/tags/ssl/</link>
+      <pubDate>Mon, 02 Oct 2017 09:04:29 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>//www.renatofrota.com/tags/wordpress/</link>
+      <pubDate>Fri, 06 Oct 2017 05:07:53 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/tags/wordpress/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

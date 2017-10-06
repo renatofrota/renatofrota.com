@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Acessando o WordPress com um endereço temporário em servidores cPanel &middot; Renato Frota </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.29" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="//www.renatofrota.com/css/nix.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+
+
+	<script type="text/javascript">if ((location.protocol !== "https:") && (window.location.hostname != "127.0.0.1") && (window.location.hostname != "localhost")) location.protocol = "https:";</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=//www.renatofrota.com/>renato@frota ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="//www.renatofrota.com/">/home/renato</a>
+				</li>
+				
+				
+				<li >
+					<a href="/sobre/">~/sobre</a>
+				</li>
+				
+				
+				<li >
+					<a href="/series/">~/series</a>
+				</li>
+				
+				
+				<li >
+					<a href="/blog/">~/blog</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/">Acessando o WordPress com um endereço temporário em servidores cPanel</a></h1>
+            <span class="post-date">06/10/2017</span>
+            
+                <p style="margin-bottom:20px">Tags:
+                
+                    <a href="/tags/dns">DNS</a> 
+                
+                    <a href="/tags/wordpress">WordPress</a> 
+                
+                </p>
+            
+            <div class="post-content">
+                
+
+<p>Este post faz parte de uma série: <a href="/series/acessando-um-dominio-a-partir-de-um-servidor-especifico">acessando um domínio a partir de um servidor específico</a>. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).</p>
+
+<p>Essa dica é muito útil para desenvolvedores e agências e vale para as <del>poucas</del> situações em que o <a href="/blog/skipdns-uma-ferramenta-pratica-para-acessar-dominios-a-partir-de-um-servidor-especifico">SkipDNS</a> não pode te ajudar.</p>
+
+<p>Se você vai criar um novo site para um determinado domínio mas, por enquanto, não pode apontar ele para a conta onde ele será hospedado nem quer se preocupar com os 3 problemas citados <a href="/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/#possíveis-soluções">aqui</a>, não precisa fritar os miolos com migração de dados. É só seguir o passo a passo abaixo.</p>
+
+<h3 id="passo-1-criação-da-conta">Passo 1 - criação da conta</h3>
+
+<p>Crie a conta de hospedagem ou crie um o &ldquo;Addon Domain&rdquo; na conta de hospedagem cPanel que você já tem, se for o caso. Se o seu cPanel está em português, é só buscar &ldquo;addon&rdquo; no campo de busca do cPanel que você acha essa opção, seja lá como estiver traduzido.</p>
+
+<p>Se for criar um domínio adicional note que o diretório padrão é <strong>public_html/dominio.com</strong>. Você pode alterar esse caminho (caso queira centralizar os addons numa pasta única, em vez de deixar eles espalhados na public_html junto ao site principal da conta, pode colocá-lo em <strong>public_html/<em>addons</em>/dominio.com</strong>, por exemplo.</p>
+
+<h3 id="passo-2-instalação-do-wordpress">Passo 2 - instalação do WordPress</h3>
+
+<p>Instale o WordPress neste domínio como faria normalmente, usando o Softaculous no painel de controle do cPanel, por exemplo. O domínio ainda não está apontando para esta conta, certo? Tudo bem, relaxa, a instalação é realizada normalmente pelos <em>auto-instaladores</em>.</p>
+
+<p>Se você não tem um auto-installer como o Softaculous no cPanel, pode usar o <a href="/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico">SkipDNS</a> ou <a href="/blog/modificando-o-arquivo-hosts-do-seu-computador">modificar o arquivo hosts do seu computador</a>.</p>
+
+<p>Você não vai conseguir acessar o site de imediato (a menos que esteja usando o <a href="/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico">SkipDNS</a> ou tenha <a href="/blog/modificando-o-arquivo-hosts-do-seu-computador">modificado o arquivo hosts do seu computador</a>) mas, calma, não se desespere.</p>
+
+<h3 id="passo-3-configurando-o-wordpress-para-acesso-via-url-temporária">Passo 3 - configurando o WordPress para acesso via URL temporária</h3>
+
+<p>Abra o <strong>File Manager</strong> (gerenciador de arquivos), navegue até o diretório onde o WP foi instalado, clique no arquivo <strong>wp-config.php</strong> e no botão <strong>Edit</strong> da toolbar do gerenciador.</p>
+
+<p>Quando o arquivo abrir, role até o final. Umas 10 linahs antes do final do arquivo você vai encontrar uma que diz:</p>
+
+<pre><code>Isto é tudo, pode parar de editar!
+</code></pre>
+
+<p>ou</p>
+
+<pre><code>That's all, stop editing!
+</code></pre>
+
+<p>Logo <strong>acima</strong> dela, inclua o seguinte código:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">//<span style="color:#75715e">&lt;?php</span><span style=""> </span><span style="color:#a6e22e">code</span><span style="">
+</span><span style="">
+</span><span style=""></span><span style="color:#66d9ef">if</span><span style=""> </span><span style="">(</span><span style="color:#a6e22e">preg_match</span><span style="">(</span><span style="color:#e6db74">&#34;/(siteground|sgvps.net|sgcpanel.com)/&#34;</span><span style="">,</span><span style="">$_SERVER</span><span style="">[</span><span style="color:#e6db74">&#34;HTTP_HOST&#34;</span><span style="">]))</span><span style=""> </span><span style="">{</span><span style="">
+</span><span style="">    </span><span style="">$username</span><span style="color:#f92672">=</span><span style="color:#a6e22e">explode</span><span style="">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="">,</span><span style="color:#66d9ef">__DIR__</span><span style="">);</span><span style="">
+</span><span style="">    </span><span style="">$corepath</span><span style="color:#f92672">=</span><span style="color:#a6e22e">preg_replace</span><span style="">(</span><span style="color:#e6db74">&#34;/^\/home.?.?\/</span><span style="color:#e6db74">$username[2]</span><span style="color:#e6db74">\/public_html/&#34;</span><span style="">,</span><span style="color:#e6db74">&#34;&#34;</span><span style="">,</span><span style="color:#66d9ef">__DIR__</span><span style="">);</span><span style="">
+</span><span style="">    </span><span style="color:#a6e22e">define</span><span style="">(</span><span style="color:#e6db74">&#39;WP_HOME&#39;</span><span style="">,</span><span style=""> </span><span style="color:#e6db74">&#34;http://&#34;</span><span style="color:#f92672">.</span><span style="">$_SERVER</span><span style="">[</span><span style="color:#e6db74">&#34;HTTP_HOST&#34;</span><span style="">]</span><span style="color:#f92672">.</span><span style="color:#e6db74">&#34;/~</span><span style="color:#e6db74">$username[2]$corepath</span><span style="color:#e6db74">&#34;</span><span style="">);</span><span style="">
+</span><span style="">    </span><span style="color:#a6e22e">define</span><span style="">(</span><span style="color:#e6db74">&#39;WP_SITEURL&#39;</span><span style="">,</span><span style=""> </span><span style="color:#e6db74">&#34;http://&#34;</span><span style="color:#f92672">.</span><span style="">$_SERVER</span><span style="">[</span><span style="color:#e6db74">&#34;HTTP_HOST&#34;</span><span style="">]</span><span style="color:#f92672">.</span><span style="color:#e6db74">&#34;/~</span><span style="color:#e6db74">$username[2]$corepath</span><span style="color:#e6db74">&#34;</span><span style="">);</span><span style="">
+</span><span style=""></span><span style="">}</span></code></pre>
+</div>
+<p>Troque o trecho <code>siteground|sgvps.net|sgcpanel.com</code> na primeira linha pelo hostname ou pelo IP do seu servidor. Se você está hospedado na <a href="https://www.siteground.com/go/compare-shared-plans">SiteGround</a>, pode deixar como está.</p>
+
+<h3 id="passo-4-acessando-a-url-temporária">Passo 4 - acessando a URL temporária</h3>
+
+<p>Se o domínio for o principal da conta:</p>
+
+<ul>
+<li>http://<strong>hostname.do.servidor</strong>/~<strong>logincpanel</strong>/</li>
+</ul>
+
+<p>Se o site estiver num addon domain:</p>
+
+<ul>
+<li>http://<strong>hostname.do.servidor</strong>/~<strong>logincpanel</strong>/<strong>dominio.com</strong></li>
+</ul>
+
+<p>Se você colocou o domínio adicional dentro de um diretório <strong><em>addons</em></strong>, o endereço será:</p>
+
+<ul>
+<li>http://<strong>hostname.do.servidor</strong>/~<strong>logincpanel</strong>/<strong><em>addons</em></strong>/<strong>dominio.com</strong></li>
+</ul>
+
+<p>Obviamente, você deve:</p>
+
+<ul>
+<li>substituir <strong>hostname.do.servidor</strong> pelo hostname ou endereço IP do servidor</li>
+<li>substituir <strong>logincpanel</strong> pelo login da sua conta</li>
+<li>substituir <strong>dominio.com</strong> pelo domínio em questão</li>
+</ul>
+
+<p>O site não abriu? Verifique com o suporte da empresa de hospedagem se o acesso via URL temporária (ou o <strong>mod_userdir</strong>) está ativado.</p>
+
+<p>O site abriu? Ótimo! Vamos ao último passo.</p>
+
+<h3 id="passo-5-configurando-os-links-permanentes-permalinks">Passo 5 - configurando os Links Permanentes (Permalinks)</h3>
+
+<p>Adicione <strong>/wp-admin</strong> ao final da URL, faça o login, e navegue até <strong>Configurações &gt; Links Permanentes</strong>. Salve o formulário (não precisa modificar nada).</p>
+
+<p>Agora, volte ao frontend do site e verifique se as páginas/posts estão abrindo como deveriam.</p>
+
+<p>Se tudo correr bem, o site estará totalmente funcional, tanto pela URL temporária quanto pela URL definitiva (caso esteja usando o <a href="/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico">SkipDNS</a> ou tenha <a href="/blog/modificando-o-arquivo-hosts-do-seu-computador">modificado o arquivo hosts do seu computador</a> - ou, ainda, depois de apontar o domínio para este novo servidor).</p>
+
+<h3 id="notas">Notas</h3>
+
+<ul>
+<li><p>Conforme você trabalha no site (faz modificações) a partir da URL temporária, alguns registros serão salvos no banco de dados do site com essa URL. Por isso:</p>
+
+<ol>
+<li><p>É preferível editar o arquivo hosts do seu computador ou usar o <a href="/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico">SkipDNS</a> em relação a este método.</p></li>
+
+<li><p>Depois que o site estiver no ar com a URL definitiva, é importante você fazer uma substituição de todas as referências ao endereço temporário no banco de dados usando um plugin de &ldquo;search and replace&rdquo; (tem vários do tipo no catálogo público do WordPress), ou terá problemas quando (e se) um dia migrar o site para outra hospedagem, pois haverão referência ao hostname/IP dessa empresa de hospedagem no banco de dados (e aí vai ter que iniciar uma caçada para encontrar qual é a bendita URL e fazer a substituição às pressas, em meio a uma migração - já pensou?).</p></li>
+</ol></li>
+
+<li><p>Para que o site <strong>deixe de ser acessível</strong> pela URL temporária (evitando dupla-indexação pelo Google, o que poderia te render um <strong>duplicate content</strong> flag), depois que o site estiver pronto e devidamente apontando para o novo servidor, entre no wp-admin a partir da URL definitiva (do domínio de fato) e salve os Links Permanentes novamente.</p></li>
+</ul>
+
+<p>E aí, gostou do tutorial? Deixe o seu comentário abaixo.</p>
+
+            </div>
+            
+            <div class="post-comments">
+                <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "renato-frota" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2017 Renato Frota -
+<span class="credit">
+	Powered by 
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and 
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.<br />
+	Hosting provided by
+	<a target="_blank" href="https://www.siteground.com/go/compare-shared-plans">SiteGround</a>,
+	<a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and
+	<a target="_blank" href="https://www.cloudflare.com/">CloudFlare</a>.
+</span>
+</p>
+</footer>
+
+    </body>

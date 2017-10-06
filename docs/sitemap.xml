@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/</loc>
+    <lastmod>2017-10-06T05:07:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/blog/modificando-o-arquivo-hosts-do-seu-computador/</loc>
+    <lastmod>2017-10-06T05:07:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//www.renatofrota.com/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica/</loc>
     <lastmod>2017-10-02T09:04:29+00:00</lastmod>
   </url>
@@ -23,23 +38,61 @@
   </url>
   
   <url>
-    <loc>//www.renatofrota.com/blog/</loc>
-    <lastmod>2017-10-02T09:04:29+00:00</lastmod>
+    <loc>//www.renatofrota.com/series/acessando-um-dominio-a-partir-de-um-servidor-especifico/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>//www.renatofrota.com/categories/</loc>
+    <loc>//www.renatofrota.com/blog/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/tags/dns/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/tags/ferramentas/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/tags/lets-encrypt/</loc>
+    <lastmod>2017-10-02T01:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//www.renatofrota.com/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/series/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/tags/ssl/</loc>
     <lastmod>2017-10-02T09:04:29+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>//www.renatofrota.com/tags/</loc>
+    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//www.renatofrota.com/tags/wordpress/</loc>
+    <lastmod>2017-10-06T05:07:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   

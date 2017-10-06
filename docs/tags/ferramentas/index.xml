@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ferramentas on Renato Frota</title>
+    <link>//www.renatofrota.com/tags/ferramentas/</link>
+    <description>Recent content in Ferramentas on Renato Frota</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 06 Oct 2017 06:16:30 +0000</lastBuildDate>
+    
+	<atom:link href="//www.renatofrota.com/tags/ferramentas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SkipDNS - acessando domínios a partir de um servidor específico</title>
+      <link>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</link>
+      <pubDate>Fri, 06 Oct 2017 06:16:30 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</guid>
+      <description>Este post faz parte de uma série: acessando um domínio a partir de um servidor específico. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).
+Você já passou por aquela situação em que você está migrando um site entre dois servidores diferentes e queria se certificar de que o site iria funcionar conforme o esperado no servidor de destino antes de apontar o DNS do domínio?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,7 @@ date: 2017-10-02 09:04:29
 title: "Substituindo domínio e/ou protocolo em arquivos estáticos do seu site de forma prática"
 slug: substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica
 description: "Neste post eu apresento um script que substitui o domínio e/ou o protocolo de URLs absolutas encontradas em arquivos estáticos do seu site (tais como CSS, JS, arquivos de cache, etc)"
+tags: [SSL,WordPress]
 ---
 Este post complemente muito bem [um outro](/blog/resolvendo-problemas-de-mixed-content-em-sites-wordpress/) que já publiquei aqui no blog, voltado a sites WordPress.
 

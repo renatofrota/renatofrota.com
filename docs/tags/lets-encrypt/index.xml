@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lets Encrypt on Renato Frota</title>
+    <link>//www.renatofrota.com/tags/lets-encrypt/</link>
+    <description>Recent content in Lets Encrypt on Renato Frota</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 02 Oct 2017 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//www.renatofrota.com/tags/lets-encrypt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certificados SSL Let&#39;s Encrypt no plano gratuito do ServerPilot</title>
+      <link>//www.renatofrota.com/blog/certificados-ssl-lets-encrypt-no-plano-gratuito-do-serverpilot/</link>
+      <pubDate>Mon, 02 Oct 2017 01:00:00 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/certificados-ssl-lets-encrypt-no-plano-gratuito-do-serverpilot/</guid>
+      <description>Vou inaugurar o blog com uma dica muito valiosa: como economizar dinheiro com certificados SSL gratuitos da Let&amp;rsquo;s Encrypt em servidores que utilizam o plano ggratuito do painel ServerPilot.
+Eu criei um script que faz isso de forma automática. Basta ver no link a seguir como instalar:
+Let&amp;rsquo;s Encrypt SSL ServerPilot
+Se tiverem qualquer dúvida, é só abrir uma issue lá no GitHub ou postar um comentário abaixo.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -12,6 +12,13 @@
         <div class="container wrapper">
             <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
             <span class="post-date">{{ .Date.Format "02/01/2006" }}</span>
+            {{ if .Params.tags }}
+                <p style="margin-bottom:20px">Tag{{ if gt (len .Params.tags) 1 }}s{{ end }}:
+                {{ range .Params.tags }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> 
+                {{ end }}
+                </p>
+            {{ end }}
             <div class="post-content">
                 {{ .Content }}
             </div>

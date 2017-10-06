@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Renato Frota</title>
+    <link>//www.renatofrota.com/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Renato Frota</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 06 Oct 2017 05:07:53 +0000</lastBuildDate>
+    
+	<atom:link href="//www.renatofrota.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acessando o WordPress com um endereço temporário em servidores cPanel</title>
+      <link>//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/</link>
+      <pubDate>Fri, 06 Oct 2017 05:07:53 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/</guid>
+      <description>Este post faz parte de uma série: acessando um domínio a partir de um servidor específico. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).
+Essa dica é muito útil para desenvolvedores e agências e vale para as poucas situações em que o SkipDNS não pode te ajudar.
+Se você vai criar um novo site para um determinado domínio mas, por enquanto, não pode apontar ele para a conta onde ele será hospedado nem quer se preocupar com os 3 problemas citados aqui, não precisa fritar os miolos com migração de dados.</description>
+    </item>
+    
+    <item>
+      <title>Substituindo domínio e/ou protocolo em arquivos estáticos do seu site de forma prática</title>
+      <link>//www.renatofrota.com/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica/</link>
+      <pubDate>Mon, 02 Oct 2017 09:04:29 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/substituindo-dominio-e-ou-protocolo-em-arquivos-estaticos-de-forma-pratica/</guid>
+      <description>Este post complemente muito bem um outro que já publiquei aqui no blog, voltado a sites WordPress.
+Resumidamente, aquele era voltado às substituições no banco de dados. Este aqui, é voltado aos arquivos estáticos do site, tais como CSS, JS, arquivos de cache, etc.
+Sem mais delongas, o link para o script está aqui.
+Como de praxe, em caso de dúvidas, abra uma issue no GitHub ou envie um comentário abaixo.</description>
+    </item>
+    
+    <item>
+      <title>Resolvendo problemas de mixed content (cadeado amarelo) em sites WordPress</title>
+      <link>//www.renatofrota.com/blog/resolvendo-problemas-de-mixed-content-em-sites-wordpress/</link>
+      <pubDate>Mon, 02 Oct 2017 01:30:00 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/resolvendo-problemas-de-mixed-content-em-sites-wordpress/</guid>
+      <description>Se você tem um site em WordPress e instalou o SSL recentemente, pode estar vendo avisos no seu navegador como &amp;ldquo;conteúdo potencialmente inseguro&amp;rdquo; ou &amp;ldquo;conteúdo misto detectado&amp;rdquo;, etc&amp;hellip; (e o cadeado de segurança fica com uma exclamação ou um triângulo amarelo).
+Isso acontece porque qualquer conteúdo carregado por meio do protocolo HTTP (não criptografado) em uma página HTTPS pode afetar a segurança do visitante. Essa imagem carregada por meio de um protocolo inseguro, abre uma brecha para ataques MITM - Man in the Middle.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,7 @@ date: 2017-10-02 01:00:00
 title: Certificados SSL Let's Encrypt no plano gratuito do ServerPilot
 slug: certificados-ssl-lets-encrypt-no-plano-gratuito-do-serverpilot
 description: Instalando e renovando automaticamente certificados Let's Encrypt em servidores com o plano gratuito do ServerPilot
+tags: [SSL,Let's Encrypt]
 ---
 Vou inaugurar o blog com uma dica muito valiosa: como economizar dinheiro com certificados SSL gratuitos da [Let's Encrypt](https://letsencrypt.org/) em servidores que utilizam o plano ggratuito do painel [ServerPilot](https://serverpilot.io/a/01e96bff9cca).
 

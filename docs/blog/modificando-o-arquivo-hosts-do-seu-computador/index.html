@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Modificando o arquivo Hosts do seu computador &middot; Renato Frota </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.29" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="//www.renatofrota.com/css/nix.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+
+
+	<script type="text/javascript">if ((location.protocol !== "https:") && (window.location.hostname != "127.0.0.1") && (window.location.hostname != "localhost")) location.protocol = "https:";</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=//www.renatofrota.com/>renato@frota ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="//www.renatofrota.com/">/home/renato</a>
+				</li>
+				
+				
+				<li >
+					<a href="/sobre/">~/sobre</a>
+				</li>
+				
+				
+				<li >
+					<a href="/series/">~/series</a>
+				</li>
+				
+				
+				<li >
+					<a href="/blog/">~/blog</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="//www.renatofrota.com/blog/modificando-o-arquivo-hosts-do-seu-computador/">Modificando o arquivo Hosts do seu computador</a></h1>
+            <span class="post-date">06/10/2017</span>
+            
+                <p style="margin-bottom:20px">Tag:
+                
+                    <a href="/tags/dns">DNS</a> 
+                
+                </p>
+            
+            <div class="post-content">
+                
+
+<p>Este post faz parte de uma série: <a href="/series/acessando-um-dominio-a-partir-de-um-servidor-especifico">acessando um domínio a partir de um servidor específico</a>. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).</p>
+
+<p>Se em alguma situação você precisar forçar o seu computador a carregar um domínio ou subdomínio a partir de um IP específico, você pode editar o <strong>arquivo Hosts</strong> do seu computador, onde ficam <strong>&ldquo;mapeamentos&rdquo; IP&lt;-&gt;domínio(s)</strong>, que o computador verifica antes de fazer uma pesquisa nos servidores DNS.</p>
+
+<h2 id="localização-do-arquivo">Localização do arquivo</h2>
+
+<h3 id="linux">Linux</h3>
+
+<p>No Linux o arquivo fica em <code>/etc/hosts</code> e, para editá-lo, você precisa abri-lo com privilégios elevados, ou seja, como um super-usuário (normalmente, como usuário <strong>root</strong>).</p>
+
+<p>No Ubuntu, por exemplo, você pode abrir o terminal e digitar:</p>
+
+<pre><code>gksudo gedit /etc/hosts
+</code></pre>
+
+<p>No Linux Mint:</p>
+
+<pre><code>gksudo xed /etc/hosts
+</code></pre>
+
+<p>Em qualquer Linux que tenha o editor <strong>nano</strong>:</p>
+
+<pre><code>sudo nano /etc/hosts
+</code></pre>
+
+<p>No caso do nano, use <strong>Ctrl+X</strong> para salvar as alterações.</p>
+
+<h3 id="windows">Windows</h3>
+
+<p>No Windows, o arquivo fica em <code>C:\Windows\system32\drivers\etc\hosts</code> e, assim como no Linux, você vai precisar de privilégios elevados para modificar o arquivo.</p>
+
+<p>Você pode abrir o menu iniciar e digitar <strong>notepad</strong> (ou <strong>bloco de notas</strong>), clicar com o botão direito do mouse sobre o resultado, e escolher <strong>Executar como Administrador</strong>.</p>
+
+<p>Uma vez dentro do bloco de notas, vá ao menu <strong>Arquivo &gt; Abrir</strong> e cole o caminho do arquivo no campo de pesquisa:</p>
+
+<pre><code>C:\Windows\system32\drivers\etc\hosts
+</code></pre>
+
+<h3 id="mac-os-x">Mac OS X</h3>
+
+<p>O arquivo é <code>/private/etc/hosts</code> e você pode editá-lo com o <strong>nano</strong>, como no Linux:</p>
+
+<pre><code>sudo nano /private/etc/hosts
+</code></pre>
+
+<p>Para salvar, o comando é basicamente mesmo: <strong>Command+X</strong></p>
+
+<h2 id="sintaxe">Sintaxe</h2>
+
+<p>A linha que você deve adicionar no arquivo deve seguir o formato:</p>
+
+<pre><code>ENDEREÇO.IP dominio.com www.dominio.com qualquer.sub.dominio.com
+</code></pre>
+
+<p>Exemplo:</p>
+
+<pre><code>192.168.0.1 seudominio.com www.seudominio.com
+</code></pre>
+
+<p>Uma vez salvo o arquivo, você pode fechar o navegador e reabri-lo para que a alteração faça efeito (ou abra o site desejado e use a combinação <strong>Ctrl+F5</strong> duas vezes).</p>
+
+<p>E aí, gostou do tutorial? Deixe o seu comentário abaixo!</p>
+
+            </div>
+            
+            <div class="post-comments">
+                <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "renato-frota" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2017 Renato Frota -
+<span class="credit">
+	Powered by 
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and 
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.<br />
+	Hosting provided by
+	<a target="_blank" href="https://www.siteground.com/go/compare-shared-plans">SiteGround</a>,
+	<a target="_blank" href="https://pages.github.com/">GitHub Pages</a> and
+	<a target="_blank" href="https://www.cloudflare.com/">CloudFlare</a>.
+</span>
+</p>
+</footer>
+
+    </body>

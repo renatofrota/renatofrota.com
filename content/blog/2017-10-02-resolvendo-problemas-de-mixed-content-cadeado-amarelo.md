@@ -3,6 +3,7 @@ date: 2017-10-02 01:30:00
 title: Resolvendo problemas de mixed content (cadeado amarelo) em sites WordPress
 slug: resolvendo-problemas-de-mixed-content-em-sites-wordpress
 description: Neste post eu apresento um script que te ajuda a resolver probelmas de conteúdo misto (que geram um aviso no browser a respeito de "conteúdo possivelmente inseguro, tais como imagens") em sites WordPress que usam protocolo HTTPS
+tags: [SSL,WordPress]
 ---
 Se você tem um site em WordPress e instalou o SSL recentemente, pode estar vendo avisos no seu navegador como "conteúdo potencialmente inseguro" ou "conteúdo misto detectado", etc... (e o cadeado de segurança fica com uma exclamação ou um triângulo amarelo).
 

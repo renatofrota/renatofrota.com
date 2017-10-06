@@ -6,10 +6,41 @@
     <description>Recent content on Renato Frota</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 02 Oct 2017 09:04:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Oct 2017 06:16:30 +0000</lastBuildDate>
     
 	<atom:link href="//www.renatofrota.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SkipDNS - acessando domínios a partir de um servidor específico</title>
+      <link>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</link>
+      <pubDate>Fri, 06 Oct 2017 06:16:30 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</guid>
+      <description>Este post faz parte de uma série: acessando um domínio a partir de um servidor específico. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).
+Você já passou por aquela situação em que você está migrando um site entre dois servidores diferentes e queria se certificar de que o site iria funcionar conforme o esperado no servidor de destino antes de apontar o DNS do domínio?</description>
+    </item>
+    
+    <item>
+      <title>Acessando o WordPress com um endereço temporário em servidores cPanel</title>
+      <link>//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/</link>
+      <pubDate>Fri, 06 Oct 2017 05:07:53 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/acessando-o-wordpress-com-um-endereco-temporario/</guid>
+      <description>Este post faz parte de uma série: acessando um domínio a partir de um servidor específico. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).
+Essa dica é muito útil para desenvolvedores e agências e vale para as poucas situações em que o SkipDNS não pode te ajudar.
+Se você vai criar um novo site para um determinado domínio mas, por enquanto, não pode apontar ele para a conta onde ele será hospedado nem quer se preocupar com os 3 problemas citados aqui, não precisa fritar os miolos com migração de dados.</description>
+    </item>
+    
+    <item>
+      <title>Modificando o arquivo Hosts do seu computador</title>
+      <link>//www.renatofrota.com/blog/modificando-o-arquivo-hosts-do-seu-computador/</link>
+      <pubDate>Fri, 06 Oct 2017 05:07:18 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/modificando-o-arquivo-hosts-do-seu-computador/</guid>
+      <description>Este post faz parte de uma série: acessando um domínio a partir de um servidor específico. Veja os outros posts da série (talvez algum dos outros métodos seja mais eficiente para o seu caso do que o método apresentado aqui).
+Se em alguma situação você precisar forçar o seu computador a carregar um domínio ou subdomínio a partir de um IP específico, você pode editar o arquivo Hosts do seu computador, onde ficam &amp;ldquo;mapeamentos&amp;rdquo; IP&amp;lt;-&amp;gt;domínio(s), que o computador verifica antes de fazer uma pesquisa nos servidores DNS.</description>
+    </item>
     
     <item>
       <title>Substituindo domínio e/ou protocolo em arquivos estáticos do seu site de forma prática</title>

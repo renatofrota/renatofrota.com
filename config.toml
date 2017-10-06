@@ -4,19 +4,31 @@ theme = "hugo-theme-nix"
 languageCode = "pt-br"
 disqusShortname = "renato-frota"
 publishDir = "docs"
+pygmentsCodeFences = true
+#pygmentsUseClassic = true
+#pygmentsStyle = borland
+#pygmentsStyle = vs
+
+[taxonomies]
+  serie = "series"
+  tag = "tags"
 
 [permalinks]
   blog = "/blog/:slug/"
 
 [menu]
   [[menu.header]]
-    name = "blog"
-    weight = 0
-    url = "/blog/"
-  [[menu.header]]
     name = "sobre"
     weight = 1
     url = "/sobre/"
+  [[menu.header]]
+    name = "series"
+    weight = 2
+    url = "/series/"
+  [[menu.header]]
+    name = "blog"
+    weight = 3
+    url = "/blog/"
 
 [params]
   GithubID = "renatofrota"
