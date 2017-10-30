@@ -6,10 +6,21 @@
     <description>Recent content in Blog on Renato Frota</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 06 Oct 2017 06:16:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Oct 2017 04:16:26 +0000</lastBuildDate>
     
 	<atom:link href="//www.renatofrota.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Plugin WordPress que converte arquivos CSV para DataTables</title>
+      <link>//www.renatofrota.com/blog/plugin-wordpress-que-converte-arquivos-csv-para-datatables/</link>
+      <pubDate>Mon, 30 Oct 2017 04:16:26 +0000</pubDate>
+      
+      <guid>//www.renatofrota.com/blog/plugin-wordpress-que-converte-arquivos-csv-para-datatables/</guid>
+      <description>Sem muita firula, segue o link para download/contribuição:
+CSV to DataTables Converter
+Espero que gostem. E, qualquer dúvida, é só comentar aqui embaixo.</description>
+    </item>
     
     <item>
       <title>SkipDNS - acessando domínios a partir de um servidor específico</title>

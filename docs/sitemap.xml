@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>//www.renatofrota.com/blog/plugin-wordpress-que-converte-arquivos-csv-para-datatables/</loc>
+    <lastmod>2017-10-30T04:16:26+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//www.renatofrota.com/blog/skipdns-acessando-dominios-a-partir-de-um-servidor-especifico/</loc>
     <lastmod>2017-10-06T06:16:30+00:00</lastmod>
   </url>
@@ -45,7 +50,7 @@
   
   <url>
     <loc>//www.renatofrota.com/blog/</loc>
-    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <lastmod>2017-10-30T04:16:26+00:00</lastmod>
   </url>
   
   <url>
@@ -68,7 +73,7 @@
   
   <url>
     <loc>//www.renatofrota.com/</loc>
-    <lastmod>2017-10-06T06:16:30+00:00</lastmod>
+    <lastmod>2017-10-30T04:16:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
