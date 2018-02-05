@@ -21,25 +21,13 @@ Meus conhecimentos incluem:
 
 [Meu repositório no GitHub](https://github.com/renatofrota)
 
-## Principais experiências
+## Principais clientes
 
-* [SiteGround](http://www.siteground.com/go/renatofrota)
-
-  * Technical Support
-
-  * De 09/2016 até o momento
-
-* World Wide Web Hosting (Site5.com)
-
-  * Technical Support
-
-  * De 03/2014 até 08/2016
-
-* Banco Nossa Caixa S/A
-
-  * Auxiliar Administrativo
-
-  * De 02/06 a 07/07
+* [SiteGround](https://www.siteground.com/)
+* [World Wide Web Hosting (Site5.com)](https://www.site5.com)
+* [TynaHost](http://tynahost.com)
+* [DadoBrasil](https://www.dadobrasil.com.br)
+* [oGigante](http://ogigante.com)
 
 ## Doação
 
