@@ -21,14 +21,6 @@ Meus conhecimentos incluem:
 
 [Meu repositório no GitHub](https://github.com/renatofrota)
 
-## Principais clientes
-
-* [SiteGround](https://www.siteground.com/)
-* [World Wide Web Hosting (Site5.com)](https://www.site5.com)
-* [TynaHost](http://tynahost.com)
-* [DadoBrasil](https://www.dadobrasil.com.br)
-* [oGigante](http://ogigante.com)
-
 ## Doação
 
 Se algum artigo ou ferramenta que escrevi te quebrou um galho, pense em quanta grana você economizoue me pague um café! :)
